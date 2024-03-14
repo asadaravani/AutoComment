@@ -36,7 +36,7 @@ public class Main {
         }
 
         // Loop 1500 times and add your comment
-        for (int i = 0; i < 1500; i++) {
+        for (int i = 0; i < 15; i++) {
             // Retry mechanism for locating the comment input field
             WebElement commentInput = null;
             int attempts = 0;
@@ -51,7 +51,7 @@ public class Main {
             }
 
             if (commentInput != null) {
-                commentInput.sendKeys("I've been with you for one month!!!");
+                commentInput.sendKeys("Hello there");
 
                 // Find the 'Post' button and click on it
                 WebElement postButton = driver.findElement(By.xpath("//button[contains(text(),'Post')]"));
